@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Marquee</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbar */
+        }
+
+        .marquee-container-1 {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 420px; /* Set to 420px height */
+        }
+
+        .marquee-1 {
+            display: flex;
+            animation: scroll 30s linear infinite; /* Adjusted for smoother scrolling */
+            width: 200%; /* Double the width to fit two sets of images */
+        }
+
+        .marquee-1 img {
+            height: 326px; /* Set image height to 420px */
+            width: 428px; /* Adjust width to match the height for square images */
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%); /* Move the container by 50% of its width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container-1">
+        <div class="marquee-1">
+            <img src="../T1.png" alt="Image 1">
+            <img src="../T2.jpeg" alt="Image 2">
+            <img src="../T3.jpeg" alt="Image 3">
+            <img src="../T4.jpeg" alt="Image 4">
+            <img src="../T5.jpeg" alt="Image 5">
+            <img src="../T6.png" alt="Image 6">
+            <img src="../T7.png" alt="Image 7">
+            <img src="../T8.jpeg" alt="Image 8">
+            <img src="../T9.jpeg" alt="Image 9">
+            <!-- Duplicate images for seamless loop -->
+            <img src="../T1.png" alt="Image 1">
+            <img src="../T2.jpeg" alt="Image 2">
+            <img src="../T3.jpeg" alt="Image 3">
+            <img src="../T4.jpeg" alt="Image 4">
+            <img src="../T5.jpeg" alt="Image 5">
+            <img src="../T6.png" alt="Image 6">
+            <img src="../T7.png" alt="Image 7">
+            <img src="../T8.jpeg" alt="Image 8">
+            <img src="../T9.jpeg" alt="Image 9">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    
+}
+nav{
+    height: 74px;
+    width: 100%;
+ 
+   box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.047);
+   display: flex;
+}
+.logo{
+    height: 70px;
+    width: 10%;
+   /* background-color: rgb(55, 226, 43); */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+  
+   
+}
+.content{
+    height: 70px;
+    width: 37%;
+   /* background-color: rgb(226, 149, 7); */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.content>h1{
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 13.5px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.3px;
+    
+}
+.search{
+    height: 70px;
+    width: 37%;
+   /* background-color: rgb(218, 10, 226); */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.search>input{
+    height: 36px;
+   width: 90%;
+   background-color: rgba(0, 0, 0, 0.051);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  
+}
+.search>input:focus{
+    background-color: white;
+}
+::placeholder{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-left: 40px  ;
+}
+.icon{
+    height: 100%;
+    width: 16%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.icon>img{
+    height: 18px;
+}
+img{
+    height: 50px;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+header>img{
+    height: 210px;
+    margin-top: 20px;
+} 
+.carousel-item img{
+    height: 420px; 
+}
+footer{
+    display: flex;
+    align-items: center;
+
+}
+footer{
+    height: 220px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+footer>h1{
+   
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.718);
+}
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 420px; /* Set to 420px height */
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 10s linear infinite; /* Adjusted for smoother scrolling */
+    width: 200%; /* Double the width to fit two sets of images */
+}
+
+.marquee img {
+    height: 326px; /* Set image height to 420px */
+    width: 428px; /* Adjust width to match the height for square images */
+}
+.marquee-container-2 {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 420px; /* Set to 420px height */
+}
+
+/* Marquee 2 content */
+.marquee-2 {
+    display: flex;
+    animation: scroll 10s linear infinite; /* Same animation for smooth scrolling */
+    width: 200%; /* Double the width to fit two sets of images */
+}
+
+.marquee-2 img {
+    height: 326px; /* Same height as the first marquee */
+    width: 428px; /* Same width as the first marquee */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Move the container by 50% of its width */
+    }
+}
+#global{
+    height: 220px;
+    width: 100%;
+    /* background-color: aqua;  */
+}
+#global>h1{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.718);
+}
+#category{
+    height: 220px;
+    width: 100%;
+}
+#category>h1{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.718);  
+}
+.category-itam{
+    height: 220px;
+    width: 100%;
+    /* background-color: aqua; */
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.category-itam img{
+   width: 250px;
+    height: 338px;
+  
+}
